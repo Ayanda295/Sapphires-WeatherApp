@@ -30,7 +30,7 @@ let descriptionElement = document.querySelector("#description");
 let humidityElement = document.querySelector("#humidity");
 let windSpeedElement = document.querySelector("#wind-speed");
 let timeElement = document.querySelector("#time");
-let date = newDate (response.data.time *1000);
+let date = date (response.data.time *1000);
 
 function formatDate (date) {
     let day = days[date.getDay()];
