@@ -23,7 +23,7 @@ function searchCity(city) {
  let apiKey = "e9ba0e93do7684t3cff3919ff4b00bf7";
  let apiUrl = "https://api.shecodes.io/weather/v1/current?query={query}&key=${apiKey}";
   console.log (apiUrl);
- axios.get(apiUrl).then(updateWeather); 
+ 
 }
 
 let searchformElement = document.querySelector("#search-form");
@@ -47,4 +47,6 @@ function formatDate (date) {
 }
 
 let icon = document.querySelector("icon");
-iconElement.innerHTML = '<img src= "${response.data.condition.icon_url}" class = weather-app-icon" />'
+iconElement.innerHTML = '<img src= "${response.data.condition.icon_url}" class = weather-app-icon" />';
+
+axios.get(apiUrl).then(updateWeather); 
