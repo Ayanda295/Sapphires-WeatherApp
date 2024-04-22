@@ -21,7 +21,7 @@ function handleSearchSubmit(event) {
 
 function searchCity(city) {
  let apiKey = "e9ba0e93do7684t3cff3919ff4b00bf7";
- let apiUrl = "https://api.shecodes.io/weather/v1/current?query={query}&key=${apiKey}";
+ let apiUrl = "https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}";
 }
 
 let searchFormElement = document.querySelector("#search-form");
@@ -30,7 +30,7 @@ let descriptionElement = document.querySelector("#description");
 let humidityElement = document.querySelector("#humidity");
 let windSpeedElement = document.querySelector("#wind-speed");
 let timeElement = document.querySelector("#time");
-let date = formatDate (response.data.time *1000);
+let date = new Date (response.data.time *1000);
 
 function formatDate (date) {
     let day = days[date.getDay()];
