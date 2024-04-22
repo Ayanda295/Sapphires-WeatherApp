@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link src="src/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-info">
+
+        <header>
+    <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter a city..." required id="search-form-input"/>
+        <input type="submit" value="search" class="search-form-button" />
+
+    </form>
+</header>
+
+<main>
+    <div class="app-data">
+        <h1 class="app-city">Paris</h1>
+       <span id="description"> <p class="app-details"> Tuesday <strong> <span id="time">14:49</strong> </span>, scattered clouds 
+            <br />
+          Humidity: <strong id="humidity"> 66%</strong>, Wind: <strong id="wind-speed"> 3.13 km/h</strong>   
+        </p> </span>
+    </div>
+</main>
+
+<div class="app-temperature-container">
+    <div class="app-icon" img src="" id="icon"></div>
+    <div class="app-temperature" id="app-temperature">12</div>
+    <div class="app-unit"> °C</div>
+
+
+</div>
+
+    </div>
+    <script src="src/java.js"></script>
+</body>
+</html>

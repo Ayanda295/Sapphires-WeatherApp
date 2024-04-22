@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(191, 198, 201);
+}
+
+.app-info {
+    background: white;
+    max-width: 600px;
+    margin: 45px;
+    box-shadow: 0 30px 50px rgba(65,50,100,0.08);
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.search-form-input {
+    background-color: lightgray;
+    border: none;
+    border-radius: 6px;
+    width: 80%;
+    font-size: 16px;
+    padding: 15px 20px;
+}
+
+.search-form-button {
+    background: palevioletred;
+    padding: 15px 20px;
+    border: none;
+    margin-left: 5px;
+    border-radius: 6px;
+    color: white;
+}
+
+header {
+    border-bottom: 1px solid grey;
+    padding: 0 0 0 30px;
+}
+
+footer {
+    border-bottom: 1px solid grey;
+    padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(0 0 0 0.6);
+    font-weight: 500;
+}
+
+a {
+    color: palevioletred;
+}
+
+.app-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-city {
+    margin: 0;
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.app-details {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(39,33,66,0.4);
+
+}
+
+.app-details strong {
+    color: rgb(240, 10, 136);
+}
+
+.app-temperature-container {
+    display: flex;
+}
+
+.app-temperature {
+    font-size: 88px;
+    line-height: 88px;
+    font-weight: bold;
+}
+
+.app-icon {
+    width: 88px;
+    height: 88px;
+}
+
+.app-unit {
+    margin-top: 16px;
+    font-size: 28px;
+}
